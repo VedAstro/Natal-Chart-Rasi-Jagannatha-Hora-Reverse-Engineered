@@ -1,0 +1,15 @@
+{
+  "name": "natal-chart-rasi-jagannatha-hora-reverse-engineered",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal JavaScript example for retrieving a JHora-style natal Rasi (D-1) chart from the VedAstro API.",
+  "scripts": {
+    "start": "node index.js",
+    "start:get": "node index.js --get",
+    "test": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
