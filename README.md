@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/jhora-reverse-engineered-header.webp" alt="JHora Reverse Engineered — from Jagannatha Hora to an open-source project" width="100%">
+</p>
+
 # Natal Chart Rasi — Jagannatha Hora Reverse Engineered
 
 Get the data behind a Jagannatha Hora (JHora)-style natal Rāśi chart with a few lines of JavaScript and a simple HTTPS request.
