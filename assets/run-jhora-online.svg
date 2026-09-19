@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="84" viewBox="0 0 620 84" role="img" aria-labelledby="title description">
+  <title id="title">Run FREE JHora Online Now</title>
+  <desc id="description">A large cyan launch button for the free online JHora application.</desc>
+  <defs>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11e7ef"/>
+      <stop offset="1" stop-color="#00aeea"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-25%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#001a33" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect x="8" y="7" width="604" height="68" rx="18" fill="url(#button)" filter="url(#shadow)"/>
+  <rect x="9" y="8" width="602" height="66" rx="17" fill="none" stroke="#8ffaff" stroke-width="2"/>
+  <text x="310" y="51" text-anchor="middle" fill="#00172d" font-family="Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, Arial, sans-serif" font-size="27" font-weight="800">🚀 Run FREE JHora Online Now</text>
+</svg>
