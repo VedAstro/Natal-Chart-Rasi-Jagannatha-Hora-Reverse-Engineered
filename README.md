@@ -4,11 +4,26 @@
 
 # Natal Chart Rasi — Jagannatha Hora Reverse Engineered
 
-Get the data behind a Jagannatha Hora (JHora)-style natal Rāśi chart with a few lines of JavaScript and a simple HTTPS request.
+Get the data behind a Jagannatha Hora (JHora) natal Rāśi chart with a few lines of JavaScript and a simple HTTPS request.
 
-This is the first small, public example from VedAstro's work to study JHora's previously desktop-only calculation workflow and make the recovered behavior easy to consume through open web APIs.
+This is the first small, public example from VedAstro's full-binary reverse engineering of the original JHora Windows application. The calculation logic was not guessed from screenshots or fitted only to the program's output: we analyzed the compiled native executable itself, decompiled its machine code, traced its internal call graph and data references, mapped UI commands to their handlers, and translated recovered behavior into testable open-source calculations.
 
-## What was unlocked?
+## What “reverse engineered” means here
+
+JHora is a native 32-bit x86 application, not a .NET program whose original source can simply be extracted. We used Ghidra and purpose-built analysis tooling to recover C-like pseudocode from the actual instructions in `jhora.exe`, with complete assembly retained wherever high-level lifting was not possible.
+
+The current whole-binary recovery inventory includes:
+
+- **7,535 functions inventoried:** 7,533 successfully decompiled to C-like output, with the remaining two recovered as complete x86 assembly.
+- **70,305 call records** and **8,535 global-variable references** mapped into a searchable structural database.
+- **1,229 MFC message-map entries** recovered, mapping all **554 distinct menu command IDs** to exact handlers.
+- **791 functions with feature evidence**, including **254 functions cited in detailed recovery documents** and **133 with reviewed semantic names**.
+
+Recovered subsystems include ephemeris and houses, divisional charts, Nakshatra and Rāśi dasas, Ashtakavarga, planetary strengths, yogas, Panchanga, transits, eclipses, Tajaka/Varshaphala, special lagnas, upagrahas, and multiple chakras.
+
+These figures mean **100% low-level function coverage**, not that every function has already been given a final astrological name or independently validated. Semantic reconstruction and test-vector verification continue feature by feature.
+
+## What was unlocked in this example?
 
 The natal Rāśi chart—also called the D-1 chart—is the foundation of a Vedic horoscope. The recovered workflow can be expressed as two reusable calculations:
 
@@ -101,13 +116,13 @@ Replace `AllPlanetRasiSigns` with `AllHouseRasiSigns` for the houses. In a GET r
 
 ## Why this repository exists
 
-JHora made a vast body of Vedic astrology calculations available in a desktop application. VedAstro is documenting the recovered calculation behavior in small, testable pieces and exposing those pieces as ordinary JSON over HTTPS—usable from JavaScript, Python, mobile apps, research notebooks, and AI tools.
+JHora made a vast body of Vedic astrology calculations available inside a closed desktop application. VedAstro is turning the results of direct executable decompilation into small, documented, testable open-source features and exposing them as ordinary JSON over HTTPS—usable from JavaScript, Python, mobile apps, research notebooks, and AI tools.
 
 Explore the wider open-source project at [VedAstro.org](https://vedastro.org) and [github.com/VedAstro/VedAstro](https://github.com/VedAstro/VedAstro).
 
 ## Independence notice
 
-This is an independent educational reverse-engineering project. Jagannatha Hora and JHora belong to their respective owner(s). This repository is not affiliated with or endorsed by the original application or its authors. It contains no original JHora program files or source code.
+This is an independent educational reverse-engineering project. Jagannatha Hora and JHora belong to their respective owner(s). This repository is not affiliated with or endorsed by the original application or its authors. Although the research analyzed the original compiled executable, this public repository contains no JHora executable, program resources, or proprietary source code.
 
 ## License
 
