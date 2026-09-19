@@ -8,6 +8,10 @@
   </a>
 </p>
 
+<p align="center">
+  <strong><a href="https://vedastro.org/blog/JHora-Reverse-Engineered-Part-1-Natal-Rasi-Chart.html">📖 Read the human story: My Natal Rāśi Chart Revealed a Marriage Across Borders</a></strong>
+</p>
+
 # Natal Chart Rasi — Jagannatha Hora Reverse Engineered
 
 Get the data behind a Jagannatha Hora (JHora) natal Rāśi chart with a few lines of JavaScript and a simple HTTPS request.
