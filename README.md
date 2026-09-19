@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <a href="https://vedastro.org/Jagannatha-Hora-Software.html">
-    <img src="https://img.shields.io/badge/-Run%20FREE%20JHora%20Online%20Now-00D9E8?style=for-the-badge" alt="Run FREE JHora Online Now" height="48">
+  <a href="https://vedastro.org/Jagannatha-Hora-Software.html" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/-%F0%9F%9A%80%20Run%20FREE%20JHora%20Online%20Now-00D9E8?style=for-the-badge" alt="🚀 Run FREE JHora Online Now" height="64">
   </a>
 </p>
 
